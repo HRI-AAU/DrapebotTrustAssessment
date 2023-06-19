@@ -28,6 +28,14 @@ source devel/setup.bash
 catkin_make
 ```
 
+The classifier relies on some Python libraries that you need to install prior to use.
+
+Pandas: see https://pypi.org/project/pandas/ for more information. Find install instruction here: https://pandas.pydata.org/docs/getting_started/install.html
+
+Numpy: see https://pypi.org/project/numpy/ for more information. Find install instruction here: https://numpy.org/install/
+
+Tensorflow: GPU and NON-GPU versions are dependent on the hardware of the machine. (1) https://www.tensorflow.org/install/pip; (2) https://pypi.org/project/tensorflow-gpu/; (3) https://pypi.org/project/tensorflow/
+
 # Run the ROS side
 open a terminal for the ros core
 ```sh
@@ -69,8 +77,8 @@ On the console you can see the active datagrams
 ![image](https://user-images.githubusercontent.com/69670188/132005615-f9b15b55-3a8b-4aa2-9064-a0228f2d10ad.png)
 
 
-# Receive the data on your Receiver ROS Node
-Use the MovementTrustAssessment/src/xsenseReceiver.py  as a starting point to receive the data
+# Receive the data on your Receiver/Classifier ROS Node
+Use the MovementTrustAssessment/src/xsenseReceiver.py  as a starting point to receive the data.
 
 The data from the published topic is defined in src/custom_msg_hri/msg/msg_hri_all_data.msg
 ```python
