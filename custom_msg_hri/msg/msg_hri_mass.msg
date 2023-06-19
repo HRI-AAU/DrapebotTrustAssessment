@@ -1,0 +1,1 @@
+geometry_msgs/Point center_of_mass
