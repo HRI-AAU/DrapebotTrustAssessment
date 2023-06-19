@@ -78,7 +78,7 @@ On the console you can see the active datagrams
 
 
 # Receive the data on your Receiver/Classifier ROS Node
-Use the MovementTrustAssessment/src/xsenseReceiver.py  as a starting point to receive the data.
+Use the MovementTrustAssessment/src/xsenseReceiver.py  as a starting point to receive the data. The classifier relies on some python libraries (see above). Make sure that you have installed Pandas, NumPy, and Tensorflow.
 
 The data from the published topic is defined in src/custom_msg_hri/msg/msg_hri_all_data.msg
 ```python
